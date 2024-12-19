@@ -5,76 +5,125 @@
 }
 
 body{
-    padding:  60px 50px;
-    margin: 20px 30px;
-    height: 700px;
+    /* border: 1px solid red; */
+    display: flex;
+    height: 96vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .containe{
-    border: 1px solid #333;
+    border: 1px solid black;
     display: flex;
-    width: 100%;
-    height: 700px;
-    margin: 0;  
-    padding: 0;   
+    flex-direction: row;
+    justify-content: center;
+    gap: 50PX;
+    width: 82rem;
+    height: 100%;
+    height: 95vh;
+    margin-top: 30px;
 }
 
-img{
-    width: 100%;
-    height: 700px;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
+.containe .right img{
+    width: 20rem;
+    height: 42.3rem;
+    object-fit: cover;
+    /* position: absolute; */
 }
-.image{
+
+.right p{
     position: relative;
+    top: -25rem;
+    padding-left: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: black;
 }
 
-.para{
-    position: absolute;
-    left: 25%;
-    top: 50%;
-    font-size: 35px;
-    color: pink;
-}
 
-.containe .right{
-    width: 30%;
-    height: 620px;
-    background-size: cover;
-    background-position: center;
-}
-
+/* left */
 .containe .left{
-    width: 70%;
-    height: 600px; 
-    padding: 10px;
-    margin: 10px;
-    display: block;  
+    display: flex;
+    width: 100%; 
+    height: 100vh;
 }
 
 .group{
-    width: 100%;
-    height: 70px;
-    justify-content: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4%;
+}
+
+.group .span1{
+    margin-left: 50%;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.group2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.group3{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.group4{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1%;
+}
+.formulaire {
+    display: flex;
     align-items: center;
-    justify-items: center;
-    padding: 20px;  
+    flex-direction: row; 
+    gap: 50PX;
+    margin-top: 30px;
+}
+
+.formulaire .radio > div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.span8{
+    float:right;
+    padding-left: 33vh;
+    text-decoration: underline;
+}
+
+.radio .div1{
+    width: 100%;
+}
+
+.group3{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 6%;
+
 }
 
 .control{
-    width:  27%;
-    height: 27px;
-    margin: 0;
-    margin: 20px;    
+    width: 24rem;
+    height: 2rem;
 }
 
 .mode{
     float: right;
     text-align: center;
     align-items: center; 
-   
 }
+
+
 button{
     text-decoration: none;
     border: none;
@@ -106,22 +155,25 @@ button{
     width: 90px;
     height: 60px; 
 }
+
+
 .submit{
    padding-left: 20px;
    font-size: 18px;
-   bottom: 20px;  
+   margin-top: 6%;  
 }
 
 .bar{
     margin-left: 10px;    
-}
+} 
 
 .info{
     display: flex;
     justify-content: space-between;
-}
+} 
 
-span{
+
+.info span{
     font-size: 20px;
     font-weight: 400px;
     height: 27px;
